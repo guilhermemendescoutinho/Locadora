@@ -82,6 +82,13 @@
         .selected{
             border: black 1px;
         }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 
 </head>
@@ -90,8 +97,14 @@
 
     <section class="buy">
         <button style="border-radius: 5px; margin: 20px; padding: 10px;" id="close">Fechar</button>
-        <div class="info" id="screen"></div>
-        <button style="border-radius: 5px; margin: 20px; padding: 10px;" >Alugar</button>
+        <div class="info" id="screen">
+            <h3 style="margin: 10px;" >Anuncie seu veículo</h3>
+            <input  style="margin: 10px; width: 70%; border: 2px black solid;"  type="text" placeholder="nome do carro">
+            <textarea name="descricao"  style="width: 70%;margin: 10px; border: 2px black solid;"  id="descricaoID" cols="50" rows="3" placeholder="Descreva seu veículo brevemente" maxlength="200"></textarea>
+            <input style="margin: 10px; width: 70%; border: 2px black solid;" type="text" placeholder="endereço da imagem">
+            <p>Atenção, faça upload da imagem em alguma plataforma na nuvem, ou uma imagem do navegador e informe o link no campo acima.</p>
+            <button style="border-radius: 5px; margin: 20px; padding: 10px;">Enviar</button>
+        </div>
     </section>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow"
