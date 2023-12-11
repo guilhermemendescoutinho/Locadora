@@ -20,12 +20,13 @@ if ($index !== false) {
 
     if($form_password === $lista_user['senha']){
         //echo "Foi efeituado Login" ;
-        header('location: ../dashboard.html');
+        header('location: ../dashboard.php');
     }else{
         echo "Dados incoerentes";
         echo '<a href="..">Volte para a página anterior</a>';
     }
 } else {
-    //echo 'Não foi encontrado um registro.';
+    echo 'Não foi encontrado um registro.';
+    echo '<a href="..">Volte para a página anterior</a>';
 }
 ?>
